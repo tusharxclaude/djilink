@@ -7,13 +7,13 @@ The receiver exposes a HID Consumer Control interface and sends **Volume Up** wh
 ## Install
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tusharxclaude/djilink/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/tusharxclaude/djilink/v0.1.0/install.sh | sh
 ```
 
 Builds from source into `~/.local/bin/djilink`; needs the Xcode Command Line Tools (`xcode-select --install`). To also start at login:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/tusharxclaude/djilink/main/install.sh | DJILINK_AGENT=1 sh
+curl -fsSL https://raw.githubusercontent.com/tusharxclaude/djilink/v0.1.0/install.sh | DJILINK_AGENT=1 sh
 ```
 
 macOS will ask for **Accessibility** and **Input Monitoring** permission (System Settings > Privacy & Security). Grant it to the `djilink` binary (or to your terminal if you launch it from there).

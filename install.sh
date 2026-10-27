@@ -1,11 +1,11 @@
 #!/bin/sh
 # Builds djilink from source into ~/.local/bin. Optionally installs a login agent.
-# Env: DJILINK_REF (git ref, default main), DJILINK_AGENT=1 to install the login agent,
+# Env: DJILINK_REF (git ref, default v0.1.0), DJILINK_AGENT=1 to install the login agent,
 #      DJILINK_KEYCODE (default 49), DJILINK_FLAGS (default option)
 set -eu
 
 REPO="${DJILINK_REPO:-tusharxclaude/djilink}"
-REF="${DJILINK_REF:-main}"
+REF="${DJILINK_REF:-v0.1.0}"
 BIN_DIR="$HOME/.local/bin"
 LABEL="com.djilink"
 PLIST="$HOME/Library/LaunchAgents/$LABEL.plist"
